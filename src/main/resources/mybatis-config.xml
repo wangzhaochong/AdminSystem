@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>
+
+    <typeAliases>  
+        <typeAlias alias="User" type="userCenter.model.batis.User"/>
+        <typeAlias alias="UserStoreInfo" type="userCenter.model.batis.UserStoreInfo"/>
+        <typeAlias alias="DishInfo" type="userCenter.model.batis.DishInfo"/>
+        <typeAlias alias="DeleteImgInfo" type="userCenter.model.batis.DeleteImgInfo"/>
+        <typeAlias alias="OrderRecode" type="userCenter.model.batis.OrderRecode"/>
+        <typeAlias alias="DishCategoryInfo" type="userCenter.model.batis.DishCategoryInfo"/>
+        <typeAlias alias="CashierInfo" type="userCenter.model.batis.CashierInfo"/>
+        <typeAlias alias="StoreTableNumber" type="userCenter.model.batis.StoreTableNumber"/>
+        <typeAlias alias="SignMap" type="userCenter.model.batis.SignMap"/>
+        <typeAlias alias="PasswordQuestion" type="userCenter.model.batis.PasswordQuestion"/>
+    </typeAliases>
+
+    <mappers>  
+        <mapper resource="mapper/user.xml" />
+        <mapper resource="mapper/userStoreInfo.xml" />
+        <mapper resource="mapper/dishInfo.xml" />
+        <mapper resource="mapper/delimg_info.xml" />
+        <mapper resource="mapper/orderRecode.xml" />
+        <mapper resource="mapper/DishCategoryInfoMapper.xml" />
+        <mapper resource="mapper/CashierInfoMapper.xml" />
+        <mapper resource="mapper/StoreTableNumberMapper.xml" />
+        <mapper resource="mapper/SignMapMapper.xml" />
+        <mapper resource="mapper/PasswordQuestionMapper.xml" />
+    </mappers>
+
+</configuration> 

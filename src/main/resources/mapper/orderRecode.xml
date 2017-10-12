@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.OrderRecodeMapper" >
+    <resultMap id="OrderRecodeResultMap" type="userCenter.model.batis.OrderRecode" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="uid" property="uid" jdbcType="INTEGER" />
+        <result column="table_id" property="tableId" jdbcType="INTEGER" />
+        <result column="order_id" property="orderId" jdbcType="INTEGER" />
+        <result column="dish_list_str" property="dishListStr" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="total_price" property="totalPrice" jdbcType="FLOAT" />
+        <result column="custom_comment" property="customComment" jdbcType="VARCHAR" />
+        <result column="manage_comment" property="manageComment" jdbcType="VARCHAR" />
+        <result column="summit_time" property="summitTime" jdbcType="TIMESTAMP" />
+        <result column="finish_time" property="finishTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Order_Column_List" >
+        id, uid, table_id,order_id,dish_list_str, status, total_price,
+        custom_comment, manage_comment,summit_time,finish_time
+    </sql>
+
+    <select id="selectOrderRecodeByReq" resultMap="OrderRecodeResultMap" parameterType="userCenter.model.batis.OrderRecode" >
+        select
+        <include refid="Order_Column_List" />
+        from order_recode
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="status != null" >
+                AND status = #{status,jdbcType=INTEGER}
+            </if>
+            <if test="tableId != null" >
+                AND table_id = #{tableId,jdbcType=INTEGER}
+            </if>
+            <if test="startTime != null" >
+                AND summit_time &gt; #{startTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="endTime != null" >
+                AND summit_time &lt; #{endTime,jdbcType=TIMESTAMP}
+            </if>
+            AND status != -1
+        </where>
+        ORDER BY summit_time DESC
+    </select>
+
+    <select id="countOrderRecodeByReq" resultType="Integer" parameterType="userCenter.model.batis.OrderRecode" >
+        select
+        COUNT(*)
+        from order_recode
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="status != null" >
+                AND status = #{status,jdbcType=INTEGER}
+            </if>
+            <if test="tableId != null" >
+                AND table_id = #{tableId,jdbcType=INTEGER}
+            </if>
+            <if test="startTime != null" >
+                AND summit_time &gt; #{startTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="endTime != null" >
+                AND summit_time &lt; #{endTime,jdbcType=TIMESTAMP}
+            </if>
+            AND status != -1
+        </where>
+    </select>
+
+    <update id="updateOrderRecode" parameterType="userCenter.model.batis.OrderRecode" >
+        update order_recode
+        <set>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER},
+            </if>
+            <if test="tableId != null" >
+                table_id = #{tableId,jdbcType=INTEGER},
+            </if>
+            <if test="orderId != null" >
+                order_id = #{orderId,jdbcType=INTEGER},
+            </if>
+            <if test="dishListStr != null" >
+                dish_list_str = #{dishListStr,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="totalPrice != null" >
+                total_price = #{totalPrice,jdbcType=FLOAT},
+            </if>
+            <if test="customComment != null" >
+                custom_comment = #{customComment,jdbcType=VARCHAR},
+            </if>
+            <if test="manageComment != null" >
+                manage_comment = #{manageComment,jdbcType=VARCHAR},
+            </if>
+            <if test="summitTime != null" >
+                summit_time = #{summitTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="finishTime != null" >
+                finish_time = #{finishTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        <where>
+            <if test="id != null" >
+                id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="uid != null" >
+                AND uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="tableId != null" >
+                AND table_id = #{tableId,jdbcType=INTEGER}
+            </if>
+            <if test="orderId != null" >
+                AND order_id = #{orderId,jdbcType=INTEGER}
+            </if>
+        </where>
+    </update>
+
+    <insert id="insertOrderRecode" parameterType="userCenter.model.batis.OrderRecode">
+
+        <selectKey keyProperty="id" resultType="Long" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into order_recode
+        <trim prefix="(" suffix=")"  suffixOverrides="," >
+            <if test="uid != null" >
+                uid,
+            </if>
+            <if test="tableId != null" >
+                table_id,
+            </if>
+            <if test="orderId != null" >
+                order_id,
+            </if>
+            <if test="dishListStr != null" >
+                dish_list_str,
+            </if>
+            <if test="status != null" >
+                status,
+            </if>
+            <if test="totalPrice != null" >
+                total_price,
+            </if>
+            <if test="customComment != null" >
+                custom_comment,
+            </if>
+            <if test="manageComment != null" >
+                manage_comment,
+            </if>
+            <if test="summitTime != null" >
+                summit_time,
+            </if>
+            <if test="finishTime != null" >
+                finish_time,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="uid != null" >
+                #{uid,jdbcType=INTEGER},
+            </if>
+            <if test="tableId != null" >
+                #{tableId,jdbcType=INTEGER},
+            </if>
+            <if test="orderId != null" >
+                #{orderId,jdbcType=INTEGER},
+            </if>
+            <if test="dishListStr != null" >
+                #{dishListStr,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="totalPrice != null" >
+                #{totalPrice,jdbcType=FLOAT},
+            </if>
+            <if test="customComment != null" >
+                #{customComment,jdbcType=VARCHAR},
+            </if>
+            <if test="manageComment != null" >
+                #{manageComment,jdbcType=VARCHAR},
+            </if>
+            <if test="finishTime != null" >
+                #{finishTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="summitTime != null" >
+                #{summitTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+
+ </mapper>

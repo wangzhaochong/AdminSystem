@@ -1,0 +1,73 @@
+.manageIndex-outer-box{
+    width: 1250px;
+    background-color: #FFFFFF;
+    min-height: 300px;
+    float: left;
+}
+
+.manageIndex-info-box{
+    width: 400px;
+    background-color: #FFFFFF;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+.manageIndex-info-title{
+    height: 25px;
+    width: 300px;
+    float: left;
+    line-height: 23px;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    font-weight: bolder;
+    margin: 10px 0 0 8px;
+}
+
+.manageIndex-info-text{
+    min-height: 22px;
+    width: 300px;
+    float: left;
+    line-height: 20px;
+    text-align: left;
+    color: #000;
+    font-size: 15px;
+    display: inline;
+    font-weight: bolder;
+    margin: 0 0 0 8px;
+}
+
+.text-inline{
+    display: inline;
+}
+
+.manageIndex-info-input{
+    height: 21px;
+    width: 300px;
+    float: left;
+    line-height: 20px;
+    text-align: left;
+    color: #000;
+    font-size: 15px;
+    display: inline;
+    font-weight: bolder;
+    margin: 0 0 6px 8px;
+}
+
+.manageIndex-info-button {
+    width: 100px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 8px 0 0 8px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}

@@ -1,0 +1,73 @@
+.index-lunbotu-module {
+    width: 100%;
+    min-width: 1300px;
+    background-color:#56ba72;
+    height: 370px;
+    float:left;
+}
+
+
+.index-lunbo-combine {
+    height: 370px;
+    float: left;
+    position: relative;
+}
+
+.index-lunbo-img {
+    height: 370px;
+    float:left;
+}
+
+.index-start-img {
+    height: 50px;
+    position: absolute;
+    top: 254px;
+    left: 176px;
+}
+
+.index-description-text1 {
+    height: 50px;
+    width: 600px;
+    position: absolute;
+    top: 63px;
+    left: 177px;
+    font-size: 42px;
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.index-description-text2 {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 82px;
+    left: 179px;
+    font-size: 29px;
+    color: #ffffff;
+    line-height: 43px;
+    font-weight: bolder;
+}
+
+.index-function-module {
+    width: 100%;
+    min-width: 1300px;
+    background-color:#FFFFFF;
+    height: 200px;
+    float:left;
+}
+
+.index-function-logos {
+    height: 200px;
+    float:left;
+    padding-left: 30px;
+}
+
+.index-function-logo {
+    height: 75px;
+    float: left;
+    padding-right: 180px;
+    padding-top: 65px;
+}
+
+

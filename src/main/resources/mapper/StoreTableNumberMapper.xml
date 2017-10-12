@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.StoreTableNumberMapper" >
+  <resultMap id="BaseResultMap" type="userCenter.model.batis.StoreTableNumber" >
+    <id column="uid" property="uid" jdbcType="BIGINT" />
+    <result column="table_max_count" property="tableMaxCount" jdbcType="INTEGER" />
+    <result column="exclude_table_number" property="excludeTableNumber" jdbcType="VARCHAR" />
+    <result column="summit_time" property="summitTime" jdbcType="DATE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    uid, table_max_count, exclude_table_number, summit_time
+  </sql>
+  <insert id="insertSelective" parameterType="userCenter.model.batis.StoreTableNumber" >
+    insert into store_table_number
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="tableMaxCount != null" >
+        table_max_count,
+      </if>
+      <if test="excludeTableNumber != null" >
+        exclude_table_number,
+      </if>
+      <if test="summitTime != null" >
+        summit_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        #{uid,jdbcType=BIGINT},
+      </if>
+      <if test="tableMaxCount != null" >
+        #{tableMaxCount,jdbcType=INTEGER},
+      </if>
+      <if test="excludeTableNumber != null" >
+        #{excludeTableNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="summitTime != null" >
+        #{summitTime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="userCenter.model.batis.StoreTableNumber" >
+    update store_table_number
+    <set >
+      <if test="tableMaxCount != null" >
+        table_max_count = #{tableMaxCount,jdbcType=INTEGER},
+      </if>
+      <if test="excludeTableNumber != null" >
+        exclude_table_number = #{excludeTableNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="summitTime != null" >
+        summit_time = #{summitTime,jdbcType=DATE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=BIGINT}
+  </update>
+</mapper>

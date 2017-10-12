@@ -1,0 +1,749 @@
+.cashier-index-content{
+    width: 100%;
+    min-width: 1250px;
+    background-color: #FFFFFF;
+    display: block;
+    min-height: 700px;
+    float: left;
+    position: relative;
+}
+
+.cashier-index-leftbox {
+    width: 170px;
+    background-color: #636363;
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 0px;
+    height: 1500px;;
+    z-index: 3;
+    min-height:700px;
+}
+
+.cashier-index-moneylogo{
+    width: 70px;
+    height: 70px;
+    display: inline;
+    float: left;
+    margin: 15px 0 0 50px;
+}
+
+.cashier-index-shopname {
+    width: 170px;
+    min-height: 38px;
+    display: inline;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 26px;
+    font-weight: bolder;
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+.mainbox-title{
+    width: 100%;
+    height: 38px;
+    display: inline;
+    font-size: 24px;
+    text-align: left;
+    text-indent: 30px;
+    color: #000000;
+    line-height: 40px;
+    font-weight: bolder;
+    float: left;
+    margin-top: 21px;
+}
+
+.mainbox-head-item{
+    width: 140px;
+    height: 30px;
+    display: inline;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    float: left;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.mainbox-body-item{
+    width: 140px;
+    height: 30px;
+    display: inline;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    line-height: 30px;
+    float: left;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    overflow: hidden;
+}
+
+.font-red{
+    color: #f00;
+}
+
+.font-yellow{
+    color: #FFBE00;
+}
+.font-grey{
+    color: #8c8c8c;
+}
+
+.font-size13{
+    font-size:13px;
+ }
+
+.font-green{
+    color: #00B919;;
+}
+
+.cashier-manage-inputbt {
+    width: 52%;
+    height: 22px;
+    float: left;
+    line-height: 11px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    display: inline;
+    margin: 4px 0 4px 24%;
+}
+
+.mainbox-right-superview-box{
+    width: 230px;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    line-height: 28px;
+    float: right;
+}
+
+.mainbox-right-count-box{
+    width: 250px;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    line-height: 28px;
+    float: right;
+    margin-top: 18px;
+}
+
+.mainbox-right-parseDish-box{
+    width: 225px;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    line-height: 28px;
+    float: right;
+    margin-top: 18px;
+}
+
+.mainbox-right-test{
+    width: 60px;
+    height: 22px;
+    display: inline;
+    font-size: 17px;
+    text-align: left;
+    color: #000000;
+    line-height: 22px;
+    float: left;
+}
+
+.mainbox-black-num{
+    color: #000000;
+    width: 50px;
+    height: 22px;
+    display: inline;
+    font-size: 17px;
+    text-align: left;
+    line-height: 22px;
+    float: left;
+}
+
+.mainbox-red-num{
+    color: #f00;
+    width: 50px;
+    height: 22px;
+    display: inline;
+    font-size: 17px;
+    text-align: left;
+    line-height: 22px;
+    float: left;
+}
+
+.mainbox-yellow-num{
+    color: #ffdc00;
+    width: 50px;
+    height: 22px;
+    display: inline;
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+    float: left;
+}
+
+.mainbox-green-num{
+    color: #00ff79;
+    width: 50px;
+    height: 22px;
+    display: inline;
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+    float: left;
+}
+
+.mainbox-select-indexlable{
+    width: 74px;
+    height: 28px;
+    display: inline;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 30px;
+    color: #000000;
+    line-height: 35px;
+    float: left;
+    margin-top: 10px;
+}
+
+.mainbox-select-lable{
+    width: 108px;
+    height: 28px;
+    display: inline;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 30px;
+    color: #000000;
+    line-height: 35px;
+    float: left;
+    margin-top: 10px;
+}
+
+.cashier-table-input{
+    width: 75px;
+    height: 16px;
+    display: inline;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+    line-height: 22px;
+    float: left;
+    margin-top: 18px;
+}
+
+
+.cashier-cal-input{
+    width: 130px;
+    height: 16px;
+    display: inline;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+    line-height: 22px;
+    float: left;
+    margin-top: 17px;
+}
+
+.cashier-search-inputbt{
+    width: 50px;
+    height: 22px;
+    display: inline;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    line-height: 15px;
+    float: left;
+    margin: 17px 0 0 18px;
+}
+
+.cashier-manage-inputb{
+    width: 80px;
+    height: 28px;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 30px;
+    color: #000000;
+    line-height: 28px;
+    float: left;
+    margin-top: 15px;
+}
+
+.cashier-index-greygap{
+    width: 170px;
+    height: 17px;
+    display: inline;
+    background-color: #868383;
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+.cashier-index-choosemark{
+    width: 5px;
+    height: 25px;
+    display: inline;
+    background-color: #ff9900;
+    float: left;
+    margin: 23px 10px 0 20px;
+}
+
+.cashier-index-unchoosemark{
+    width: 5px;
+    height: 25px;
+    display: inline;
+    background-color: #636363;
+    float: left;
+    margin: 23px 10px 0 20px;
+}
+
+.cashier-index-firtitle {
+    width: 135px;
+    height: 38px;
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+    line-height: 40px;
+    font-weight: bolder;
+    float: left;
+    margin: 15px 0 0 0;
+    text-indent: 2px;
+}
+
+.cashier-index-rightbox{
+    position: absolute;
+    width: 100%;
+    min-height: 700px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    left: 0;
+}
+.cashier-index-superview-box{
+    width:99%;
+    min-width: 1340px;
+    background-color: #ffffff;
+    display: inline;
+    float:left;
+    border-bottom: 2px solid #3C3A3A;
+}
+
+.cashier-index-mainbox{
+    min-width: 1080px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 144px;
+    margin: 0 0 0 170px;
+}
+
+.mainbox-right-tableup{
+    width: 1128px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    margin: 3px 0 0 30px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+.mainbox-right-table{
+    width: 1128px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    margin: 5px 0 0 30px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.mainbox-table-header{
+    width: 1128px;
+    background-color: #ff9900;
+    display: inline;
+    float: left;
+}
+
+.mainbox-table-bodyline{
+    width: 1128px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    height: 30px;
+}
+
+.mainbox-table-body{
+    width: 1128px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+}
+
+.cashier-index-superview{
+    height: 142px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    margin: 0 0 0 170px;
+}
+.superview-box-item{
+    width: 260px;
+    height: 76px;
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    margin: 43px 0 0 0;
+}
+.superview-box-test{
+    width: 100%;
+    height: 32px;
+    display: inline;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    line-height: 32px;
+    font-weight: bolder;
+    float: left;
+}
+.cashier-mask-grey{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: #c9c9c9;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    z-index:8;
+    display:none;
+}
+
+.cashier-back-top{
+    position:fixed;
+    width:100px;
+    height:33px;
+    z-index:7;
+    left:35px;
+    bottom: 8px;
+    line-height: 33px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.cashier-order-detail-box{
+    position: absolute;
+    width: 800px;
+    left: 300px;
+    top: 50px;
+    display: none;
+    float: left;
+    z-index: 9;
+    background-color: #ffffff;
+}
+
+.add-order-box{
+    position: absolute;
+    width: 220px;
+    left: 287px;
+    top: 96px;
+    display: none;
+    float: left;
+    z-index: 10;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+.add-order-listbox{
+    width: 220px;
+    height: 300px;
+    display: inline;
+    float: left;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+.add-order-header{
+    display: inline;
+    float: left;
+    width: 220px;
+    height: 28px;
+    background-color: #ff9900;
+    border-bottom: 1px solid #000;
+    line-height: 33px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.add-order-cateitem{
+    display: inline;
+    float: left;
+    width: 200px;
+    height: 28px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000;
+    line-height: 29px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 0px;
+    text-indent: 4px;
+    font-weight: bolder;
+}
+
+.add-order-dish-box{
+    display: inline;
+    float: left;
+    width: 200px;
+    height: 28px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000;
+}
+
+.add-order-dish-name{
+    display: inline;
+    float: left;
+    line-height: 28px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 3px;
+}
+
+.add-order-dish-add{
+    display: inline;
+    line-height: 27px;
+    font-size: 16px;
+    color: #4F4AFF;
+    float: right;
+    margin: 0 5px 0 0;
+}
+
+.order-detail-content-box{
+    display: inline;
+    float: left;
+    width: 720px;
+    margin: 26px 0 0 40px;
+}
+
+.order-detail-orderId{
+    display: inline;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    font-size: 23px;
+    color: #000;
+    margin: 0 0 0 1px;
+}
+
+.order-detail-commenttitle{
+    display: inline;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    color: #000;
+    margin: 30px 0 0 1px;
+}
+
+.order-detail-buttonbox{
+    display: inline;
+    float: right;
+    height: 76px;
+    margin: 35px -6px 0 2px;
+}
+
+.order-detail-button-left{
+    width: 120px;
+    height: 29px;
+    display: inline;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #ff9900;
+    line-height: 30px;
+    float: left;
+    margin: 57px 0 0 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.order-detail-button{
+    width: 120px;
+    height: 29px;
+    display: inline;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #ff9900;
+    line-height: 30px;
+    float: left;
+    margin: 22px 0 0 26px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.order-detail-close{
+    width: 25px;
+    height: 25px;
+    display: inline;
+    float: right;
+    margin: -1px 0px 0 0;
+}
+
+.order-addbox-close{
+    width: 25px;
+    height: 25px;
+    display: inline;
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
+.order-detail-price{
+    display: inline;
+    float: right;
+    height: 22px;
+    line-height: 35px;
+    font-size: 17px;
+    color: #000;
+    margin: 5px 4px 0 0;
+}
+
+.order-detail-tableheader{
+    display: inline;
+    float: left;
+    width: 720px;
+    height: 33px;
+    margin: -1px 0 0 0;
+    background-color: #ff9900;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.order-detail-commentbox{
+    display: inline;
+    float: left;
+    width: 100%;
+    min-height: 80px;
+    background-color: #ffffff;
+    line-height: 33px;
+    font-size: 15px;
+    margin: -1px 0 0 0;
+    border: 1px solid #000;
+}
+
+.order-detail-tabletr-box{
+    display: inline;
+    float: left;
+}
+
+.order-detail-tabletr{
+    display: inline;
+    float: left;
+    width: 720px;
+    height: 33px;
+    background-color: #ffffff;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.order-detail-headeritem{
+    display: inline;
+    float: left;
+    width: 119px;
+    height: 33px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 33px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.order-detail-bodyitem{
+    display: inline;
+    float: left;
+    width: 119px;
+    height: 33px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 33px;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cashier-detail-count{
+    display: inline;
+    float: left;
+    width: 54px;
+    margin-top: 2px;
+}
+
+.order-detail-minus{
+    display: inline;
+    float: left;
+    width: 15px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 27px;
+    color: #F00;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 17px;
+}
+
+.order-detail-plus{
+    display: inline;
+    float: right;
+    width: 16px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 21px;
+    color: #F00;
+    text-align: right;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.order-detail-bodyitem-dishname{
+    display: inline;
+    float: left;
+    width: 119px;
+    height: 33px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 33px;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+}
+
+.print-receive-text{
+    display: inline;
+    float: left;
+    width: 5.2cm;
+    min-height: 33px;
+    line-height: 33px;
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+    overflow: hidden;
+}
+
+.print-receive-box{
+    display: inline;
+    float: left;
+    width: 120px;
+}

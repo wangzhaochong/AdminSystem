@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.UserStoreInfoMapper" >
+    <resultMap id="StoreResultMap" type="userCenter.model.batis.UserStoreInfo" >
+        <id column="uid" property="uid" jdbcType="INTEGER" />
+        <result column="store_name" property="storeName" jdbcType="VARCHAR" />
+        <result column="store_address" property="storeAddress" jdbcType="VARCHAR" />
+        <result column="store_onwer" property="storeOnwer" jdbcType="VARCHAR" />
+        <result column="store_mobile" property="storeMobile" jdbcType="VARCHAR" />
+        <result column="store_description" property="storeDescription" jdbcType="VARCHAR" />
+        <result column="store_headimg" property="storeHeadimg" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Store_Column_List" >
+        uid, store_name, store_address, store_onwer, store_mobile, store_description, store_headimg
+    </sql>
+
+    <select id="selectStoreInfoByAccountName" resultMap="StoreResultMap" parameterType="userCenter.model.batis.UserStoreInfo" >
+        select
+        <include refid="Store_Column_List" />
+        from user_store_info
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="storeName != null" >
+                AND store_name = #{storeName,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateStoreInfoByUid" parameterType="userCenter.model.batis.UserStoreInfo" >
+        update user_store_info
+        <set>
+            <if test="storeName != null" >
+                store_name = #{storeName,jdbcType=VARCHAR},
+            </if>
+            <if test="storeAddress != null" >
+                store_address = #{storeAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="storeOnwer != null" >
+                store_onwer = #{storeOnwer,jdbcType=VARCHAR},
+            </if>
+            <if test="storeMobile != null" >
+                store_mobile = #{storeMobile,jdbcType=VARCHAR},
+            </if>
+            <if test="storeDescription != null" >
+                store_description = #{storeDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="storeHeadimg != null" >
+                store_headimg = #{storeHeadimg,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+        </where>
+    </update>
+
+    <insert id="insertStoreInfo" parameterType="userCenter.model.batis.UserStoreInfo">
+
+        <selectKey keyProperty="uid" resultType="Long" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user_store_info
+        <trim prefix="(" suffix=")"  suffixOverrides="," >
+            <if test="storeName != null" >
+                store_name,
+            </if>
+            <if test="storeAddress != null" >
+                store_address,
+            </if>
+            <if test="storeOnwer != null" >
+                stor_onwer,
+            </if>
+            <if test="storeMobile != null" >
+                store_mobile,
+            </if>
+            <if test="storeDescription != null" >
+                store_description,
+            </if>
+            <if test="storeHeadimg != null" >
+                store_headimg,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="storeName != null" >
+                #{storeName,jdbcType=VARCHAR},
+            </if>
+            <if test="storeAddress != null" >
+                #{storeAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="storeOnwer != null" >
+                #{storeOnwer,jdbcType=VARCHAR},
+            </if>
+            <if test="storeMobile != null" >
+                #{storeMobile,jdbcType=VARCHAR},
+            </if>
+            <if test="storeDescription != null" >
+                #{storeDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="storeHeadimg != null" >
+                #{storeHeadimg,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+ </mapper>

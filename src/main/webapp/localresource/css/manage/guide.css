@@ -1,0 +1,14 @@
+.guide-context-module {
+    width: 100%;
+    min-width: 1000px;
+    background-color:#FFFFFF;
+    min-height: 420px;
+    overflow:hidden;
+    float:left;
+}
+
+.guide-context-img {
+    float:left;
+    height:300px;
+    padding: 50px 100px 50px 100px;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.UserMapper" >
+    <resultMap id="UserResultMap" type="userCenter.model.batis.User" >
+        <id column="uid" property="uid" jdbcType="INTEGER" />
+        <result column="account_name" property="accountName" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="user_type" property="userType" jdbcType="INTEGER" />
+        <result column="expire_time" property="expireTime" jdbcType="INTEGER" />
+        <result column="is_expired" property="isExpired" jdbcType="INTEGER" />
+    </resultMap>
+
+    <sql id="User_Column_List" >
+        uid, password, account_name, user_type, expire_time, is_expired
+    </sql>
+
+    <select id="selectUserByAccountName" resultMap="UserResultMap" parameterType="userCenter.model.batis.User" >
+        select
+        <include refid="User_Column_List" />
+        from user_basic
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="accountName != null" >
+                AND account_name = #{accountName,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertUser" parameterType="userCenter.model.batis.User" timeout="2000">
+
+        <selectKey keyProperty="uid" resultType="Long" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user_basic
+        <trim prefix="(" suffix=")"  suffixOverrides="," >
+            <if test="accountName != null" >
+                account_name,
+            </if>
+            <if test="password != null" >
+                password,
+            </if>
+            <if test="userType != null" >
+                user_type,
+            </if>
+            <if test="expireTime != null" >
+                expire_time,
+            </if>
+            <if test="isExpired != null" >
+                is_expired,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="accountName != null" >
+                #{accountName,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="userType != null" >
+                #{userType,jdbcType=INTEGER},
+            </if>
+            <if test="expireTime != null" >
+                #{expireTime,jdbcType=INTEGER},
+            </if>
+            <if test="isExpired != null" >
+                #{isExpired,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="userCenter.model.batis.User" >
+        update user_basic
+        <set >
+            <if test="accountName != null" >
+                account_name = #{accountName,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                password = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="userType != null" >
+                user_type = #{userType,jdbcType=INTEGER},
+            </if>
+            <if test="expireTime != null" >
+                expire_time = #{expireTime,jdbcType=INTEGER},
+            </if>
+            <if test="isExpired != null" >
+                is_expired = #{isExpired,jdbcType=INTEGER}
+            </if>
+        </set>
+        where uid = #{uid,jdbcType=BIGINT}
+    </update>
+
+ </mapper>

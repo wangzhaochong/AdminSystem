@@ -1,0 +1,130 @@
+.login-background-module {
+    width: 100%;
+    min-width: 1000px;
+    background-color:#56ba72;
+    height: 530px;
+    float:left;
+    position: relative;
+}
+
+.login-form-module {
+    width: 400px;
+    min-height: 300px;
+    position: absolute;
+    left: 460px;
+    top: 30px;
+}
+
+.login-type {
+    width: 200px;
+    height: 50px;
+    display: inline;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    color:#FFF;
+    float:left;
+    text-decoration:none;
+}
+
+.login-form {
+    width: 400px;
+    height: 400px;
+    background-color:#FFFFFF;
+    display: inline;
+    float:left;
+}
+
+.login-words {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    color:#000;
+    float:left;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.find-password{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #676767;
+    float: right;
+    padding-right: 21px;
+    padding-top: 0px;
+    text-decoration: underline;
+    display:inline;
+    cursor: pointer;
+}
+
+.input-name {
+    width:350px;
+    height: 40px;
+    margin: 0px 25px 0px 25px;
+    font-size:20px;
+    float:left;
+
+}
+
+.input-pwd {
+    width:350px;
+    height: 40px;
+    margin: 0px 25px 0px 25px;
+    font-size:20px;
+    float:left;
+}
+
+.verify-box {
+    width: 350px;
+    height: 40px;
+    margin: 0px 25px 0px 25px;
+    float:left;
+}
+
+.input-vrcode {
+    width: 160px;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+    font-size:20px;
+    float:left;
+}
+
+.vrcode_img_box{
+    height: 46px;
+    float:left;
+}
+
+.vrcode_img{
+    height: 46px;
+    margin: 0px 0px 0px 30px;
+    float:left;
+}
+
+.input-message {
+    float:left;
+    width:350px;
+    height:30px;
+    padding:10px 0 0 25px;
+    font-size:15px;
+    text-align: center;
+    line-height: 30px;
+    color:#F00;
+}
+
+.input-button {
+    float: left;
+    width: 350px;
+    margin-left: 25px;
+    display: none;
+    border-radius: 9px;
+    background-color: #00c3ff;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+}
+
+
+

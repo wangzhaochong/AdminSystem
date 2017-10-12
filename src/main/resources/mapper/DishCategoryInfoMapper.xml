@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.DishCategoryInfoMapper" >
+  <resultMap id="BaseResultMap" type="userCenter.model.batis.DishCategoryInfo" >
+    <id column="cate_id" property="cateId" jdbcType="BIGINT" />
+    <result column="cate_name" property="cateName" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="cate_index" property="cateIndex" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    cate_id, cate_name, status, cate_index, uid
+  </sql>
+  <select id="selectByReq" resultMap="BaseResultMap" parameterType="userCenter.model.batis.DishCategoryInfo" >
+    select
+    <include refid="Base_Column_List" />
+    from dish_category_info
+    <where>
+      <if test="cateId != null" >
+        cate_id = #{cateId,jdbcType=BIGINT}
+      </if>
+      <if test="cateName != null" >
+        AND cate_name = #{cateName,jdbcType=VARCHAR}
+      </if>
+      <if test="status != null" >
+        AND status = #{status,jdbcType=INTEGER}
+      </if>
+      <if test="cateIndex != null" >
+        AND cate_index = #{cateIndex,jdbcType=INTEGER}
+      </if>
+      <if test="uid != null" >
+        AND uid = #{uid,jdbcType=BIGINT}
+      </if>
+      AND status = 1
+    </where>
+    ORDER BY cate_index ASC
+  </select>
+  <insert id="insertSelective" parameterType="userCenter.model.batis.DishCategoryInfo" >
+    insert into dish_category_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="cateId != null" >
+        cate_id,
+      </if>
+      <if test="cateName != null" >
+        cate_name,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="cateIndex != null" >
+        cate_index,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="cateId != null" >
+        #{cateId,jdbcType=BIGINT},
+      </if>
+      <if test="cateName != null" >
+        #{cateName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="cateIndex != null" >
+        #{cateIndex,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="userCenter.model.batis.DishCategoryInfo" >
+    update dish_category_info
+    <set >
+      <if test="cateName != null" >
+        cate_name = #{cateName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="cateIndex != null" >
+        cate_index = #{cateIndex,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=BIGINT},
+      </if>
+    </set>
+    where cate_id = #{cateId,jdbcType=BIGINT}
+  </update>
+
+  <update id="updateIndexList" parameterType="java.util.List" >
+    <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+      UPDATE dish_category_info
+      <set>
+        cate_index=${item.cateIndex}
+      </set>
+      WHERE cate_id = ${item.cateId}
+    </foreach>
+  </update>
+</mapper>

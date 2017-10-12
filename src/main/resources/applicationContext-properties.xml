@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans profile="test">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="fileEncoding" value="UTF-8"></property>
+            <property name="properties" ref="configProperties" />
+            <property name="order" value="0"></property>
+        </bean>
+        <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+            <property name="locations">
+                <list>
+                    <value>classpath:test/*.properties</value>
+                </list>
+            </property>
+        </bean>
+    </beans>
+
+    <beans profile="product">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="fileEncoding" value="UTF-8"></property>
+            <property name="properties" ref="configProperties" />
+            <property name="order" value="0"></property>
+        </bean>
+        <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+            <property name="locations">
+                <list>
+                    <value>classpath:product/*.properties</value>
+                </list>
+            </property>
+        </bean>
+    </beans>
+</beans>

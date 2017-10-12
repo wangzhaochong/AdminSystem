@@ -1,0 +1,56 @@
+.cashier-header-box{
+    width: 99%;
+    min-width: 1340px;
+    background-color: #FFFFFF;
+    display: block;
+    min-height: 40px;
+    float: left;
+    margin-right: 1%;
+    border-bottom: 2px solid #3C3A3A;
+}
+
+.cashier-header-logotext{
+    width: 170px;
+    display: inline;
+    height: 50px;
+    float: left;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.cashier-header-titletext{
+    width: 160px;
+    display: inline;
+    height: 50px;
+    float: left;
+    text-align: left;
+    line-height: 64px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.cashier-header-rightbox{
+    min-width: 130px;
+    background-color: #FFFFFF;
+    display: block;
+    min-height: 50px;
+    float: right;
+}
+
+.cashier-header-username{
+    min-width: 60px;
+    display: inline;
+    height: 50px;
+    float: left;
+    text-align: right;
+    line-height: 50px;
+    font-size: 19px;
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: blink;
+}

@@ -1,0 +1,355 @@
+.user-center-infobox{
+    width: 100%;
+    min-width: 1000px;
+    background-color: #FFFFFF;
+    min-height: 300px;
+    overflow: hidden;
+    float: left;
+    border-bottom: 2px solid #E4E4E4;
+}
+
+.user-center-upgradebox{
+    width: 100%;
+    min-width: 1000px;
+    background-color:#FFFFFF;
+    min-height: 640px;
+    overflow:hidden;
+    float:left;
+}
+
+.user-center-infoitem{
+    width: 100%;
+    min-width: 1000px;
+    background-color: #FFFFFF;
+    height: 40px;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+.user-center-costtable{
+    width: 484px;
+    background-color: #FFFFFF;
+    min-height: 40px;
+    float: left;
+    margin: 6px 0 10px 28px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.usercenter-costtable-item{
+    width: 120px;
+    background-color: #FFFFFF;
+    height: 27px;
+    float: left;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.usercenter-costprice-origin{
+    background-color: #FFFFFF;
+    height: 27px;
+    float: left;
+    line-height: 27px;
+    color: #000;
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 29px;
+    width: 30px;
+    text-align: center;
+}
+
+.usercenter-costprice-final{
+    background-color: #FFFFFF;
+    height: 27px;
+    float: left;
+    line-height: 27px;
+    color: #f00;
+    font-size: 17px;
+    width: 30px;
+    text-align: center;
+}
+
+.user-center-boldtext{
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    display: inline;
+    font-weight: bolder;
+    margin: 0 0 0 28px;
+}
+
+.user-center-paragraph{
+    width: 100%;
+    min-height: 40px;
+    float: left;
+    line-height: 25px;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 0 0 0 28px;
+}
+
+.user-center-radiotext{
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    font-weight: bolder;
+    margin: 0 0 0 8px;
+}
+
+.user-center-nomaltext{
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #f00;
+    font-size: 17px;
+    display: inline;
+    margin: -2px 0 0 28px;
+}
+
+.user-center-pwdinfotext{
+    height: 40px;
+    width: 350px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #f00;
+    font-size: 17px;
+    display: inline;
+    margin: 30px 0 0 5px;
+}
+
+.userCenter-modify-titletext{
+    height: 40px;
+    width: 350px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000000;
+    font-size: 17px;
+    display: inline;
+    margin: 4px 0 0 0;
+}
+
+.usercenter-selct-lable {
+    width: 54px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+.usercenter-modifypwd-lable {
+    width: 60px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 34px 0 0 16px;
+    text-align: left;
+}
+
+.user-center-button {
+    width: 100px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 8px 0 0 70px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.user-contact-button {
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: left;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 17px;
+    display: inline;
+    margin: 8px 0 0 70px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.user-qq-logo{
+    height: 22px;
+    float: left;
+    display: inline;
+    margin: 8px 0 0 0;
+    cursor: pointer;
+}
+
+.user-center-modifysummitbt {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 22px 0 0 81px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.user-center-pswsummitbt {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: -10px 0 0 83px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.user-center-modifycancelbt {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 22px 0 0 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.user-center-psdcancelbt {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: -10px 0 0 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.input-redio-usercenter {
+    float: left;
+    font-size: 15px;
+    display: inline;
+    margin: 15px 0 0 26px;
+}
+
+.userCenter-mask-grey{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: #c9c9c9;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    z-index:2;
+    display:none;
+}
+
+.userCenter-modify-box{
+    position: absolute;
+    width: 400px;
+    height: 380px;
+    left: 450px;
+    top: 150px;
+    display: none;
+    float: left;
+    z-index: 3;
+    background-color: #ffffff;
+}
+
+.userCenter-modify-content{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 0px;
+    display: inline;
+    float: left;
+}
+
+.usercenter-anwers {
+    width: 240px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin: 9px 45px 12px 6px;
+    border: 1px solid #B7B7B7;
+}
+
+.usercenter-pwd-input {
+    width: 226px;
+    background-color: #FFFFFF;
+    height: 23px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin: 37px 15px 0px 6px;
+    border: 1px solid #B7B7B7;
+}
+
+.usercenter-selct-ques{
+    width: 240px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 14px 50px 1px 6px;
+}

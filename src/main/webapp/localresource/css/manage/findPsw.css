@@ -1,0 +1,148 @@
+.findPsw-modify-titletext{
+    height: 40px;
+    width: 300px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    display: inline;
+    margin: 4px 0 0 0;
+    font-weight: bolder;
+}
+
+.findPsw-reset-titletext{
+    height: 40px;
+    width: 420px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    display: inline;
+    margin: 4px 0 0 0;
+    font-weight: bolder;
+}
+
+.find-total-box {
+    width: 440px;
+    background-color: #FFFFFF;
+    float: left;
+    display: block;
+}
+
+.find-psw-box {
+    width: 320px;
+    background-color: #FFFFFF;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: block;
+    margin: 0 0 0 0;
+    text-align: left;
+}
+
+.reset-psw-box {
+    width: 440px;
+    height: 800px;
+    background-color: #FFFFFF;
+    float: left;
+    display: none;
+    text-align: left;
+}
+
+.find-selct-lable {
+    width: 300px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+.find-answer-lable {
+    width: 48px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 7px 0 0 0;
+    text-align: left;
+}
+
+.reset-answer-lable {
+    width: 120px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    color: #000;
+    font-size: 17px;
+    display: inline;
+    margin: 7px 0 0 0;
+    text-align: left;
+}
+
+.find-anwers {
+    width: 240px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin: 9px 0 18px 0px;
+    border: 1px solid #B7B7B7;
+}
+
+.find-psw-summitbt {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 22px 0 40px 203px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.find-psw-reset {
+    width: 80px;
+    height: 22px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+    font-size: 15px;
+    display: inline;
+    margin: 10px 0 40px 282px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.findr-pwdinfotext{
+    height: 40px;
+    width: 620px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+    display: inline;
+    margin: 30px 0 0 5px;
+}

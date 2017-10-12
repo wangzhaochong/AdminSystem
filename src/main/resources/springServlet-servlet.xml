@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <import resource="applicationContext-datasource.xml"/>
+    <import resource="applicationContext-properties.xml"/>
+
+    <!-- DispatcherServlet Context: defines this servlet's request-processing
+        infrastructure -->
+    <context:component-scan base-package="userCenter.controllers" />
+    <context:component-scan base-package="userCenter.service" />
+    <context:component-scan base-package="userCenter.interceptor" />
+    <context:component-scan base-package="userCenter.constant" />
+
+    <mvc:annotation-driven />
+
+    <!-- 定时任务加载 -->
+    <task:annotation-driven/>
+
+    <mvc:resources mapping="/images/**" location="/localresource/images/" />
+    <mvc:resources mapping="/css/**" location="/localresource/css/" />
+    <mvc:resources mapping="/js/**" location="/localresource/js/" />
+    <mvc:resources mapping="/localresource/**" location="/localresource/" />
+
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources
+        in the /WEB-INF/views directory -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- Only needed because we require fileupload in the org.springframework.samples.mvc.fileupload
+        package -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/customMenu/**"/>
+            <mvc:exclude-mapping path="/menuManage/**"/>
+            <mvc:exclude-mapping path="/shopManage/**"/>
+            <mvc:exclude-mapping path="/images/**"/>
+            <mvc:exclude-mapping path="/css/**"/>
+            <mvc:exclude-mapping path="/js/**"/>
+            <bean class="userCenter.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/images/**"/>
+            <mvc:exclude-mapping path="/css/**"/>
+            <mvc:exclude-mapping path="/js/**"/>
+            <bean class="userCenter.interceptor.ResourceReplaceInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>

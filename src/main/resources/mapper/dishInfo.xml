@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="userCenter.mapper.DishInfoMapper" >
+    <resultMap id="DishResultMap" type="userCenter.model.batis.DishInfo" >
+        <id column="dish_id" property="dishId" jdbcType="INTEGER" />
+        <result column="dish_name" property="dishName" jdbcType="VARCHAR" />
+        <result column="dish_price_origin" property="dishPriceOrigin" jdbcType="FLOAT" />
+        <result column="dish_price_final" property="dishPriceFinal" jdbcType="FLOAT" />
+        <result column="dish_price_discount" property="dishPriceDiscount" jdbcType="FLOAT" />
+        <result column="dish_ingredient" property="dishIngredient" jdbcType="VARCHAR" />
+        <result column="dish_abstract" property="dishAbstract" jdbcType="VARCHAR" />
+        <result column="dish_description" property="dishDescription" jdbcType="VARCHAR" />
+        <result column="dish_img" property="dishImg" jdbcType="VARCHAR" />
+        <result column="uid" property="uid" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="dish_index" property="dishIndex" jdbcType="INTEGER" />
+        <result column="cate_id" property="cateId" jdbcType="INTEGER" />
+    </resultMap>
+
+    <sql id="Dish_Column_List" >
+        dish_id, dish_name, dish_price_origin,dish_price_final,
+        dish_price_discount,dish_ingredient, dish_abstract, dish_description,
+         dish_img, uid,status,dish_index,cate_id
+    </sql>
+
+    <select id="selectDishInfoByReq" resultMap="DishResultMap" parameterType="userCenter.model.batis.DishInfo" >
+        select
+        <include refid="Dish_Column_List" />
+        from dish_info
+        <where>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER}
+            </if>
+            <if test="dishName != null" >
+                AND dish_name = #{dishName,jdbcType=VARCHAR}
+            </if>
+            <if test="dishId != null" >
+                AND dish_id = #{dishId,jdbcType=INTEGER}
+            </if>
+            <if test="cateId != null" >
+                AND cate_id = #{cateId,jdbcType=INTEGER}
+            </if>
+            AND status != -1
+        </where>
+        ORDER BY dish_index ASC
+    </select>
+
+    <select id="selectDishInfoByButch" resultMap="DishResultMap" >
+        select
+        <include refid="Dish_Column_List" />
+        from dish_info
+        <where>
+            dish_id in
+            <foreach collection="list" item="dishIdItem"  open="(" separator="," close=")">
+                #{dishIdItem}
+            </foreach>
+            AND status != -1
+        </where>
+        ORDER BY dish_index ASC
+    </select>
+
+    <update id="updateDishInfo" parameterType="userCenter.model.batis.DishInfo" >
+        update dish_info
+        <set>
+            <if test="dishName != null" >
+                dish_name = #{dishName,jdbcType=VARCHAR},
+            </if>
+            <if test="dishPriceOrigin != null" >
+                dish_price_origin = #{dishPriceOrigin,jdbcType=FLOAT},
+            </if>
+            <if test="dishPriceFinal != null" >
+                dish_price_final = #{dishPriceFinal,jdbcType=FLOAT},
+            </if>
+            <if test="dishPriceDiscount != null" >
+                dish_price_discount = #{dishPriceDiscount,jdbcType=FLOAT},
+            </if>
+            <if test="dishIngredient != null" >
+                dish_ingredient = #{dishIngredient,jdbcType=VARCHAR},
+            </if>
+            <if test="dishAbstract != null" >
+                dish_abstract = #{dishAbstract,jdbcType=VARCHAR},
+            </if>
+            <if test="dishDescription != null" >
+                dish_description = #{dishDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="dishImg != null" >
+                dish_img = #{dishImg,jdbcType=VARCHAR},
+            </if>
+            <if test="uid != null" >
+                uid = #{uid,jdbcType=INTEGER},
+            </if>
+            <if test="status != null" >
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="dishIndex != null" >
+                dish_index = #{dishIndex,jdbcType=INTEGER},
+            </if>
+            <if test="cateId != null" >
+                cate_id = #{cateId,jdbcType=INTEGER},
+            </if>
+        </set>
+        <where>
+            <if test="dishId != null" >
+                dish_id = #{dishId,jdbcType=INTEGER}
+            </if>
+        </where>
+    </update>
+
+    <insert id="insertDishInfo" parameterType="userCenter.model.batis.DishInfo">
+
+        <selectKey keyProperty="dishId" resultType="Long" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into dish_info
+        <trim prefix="(" suffix=")"  suffixOverrides="," >
+            status,
+            <if test="dishName != null" >
+                dish_name,
+            </if>
+            <if test="dishPriceOrigin != null" >
+                dish_price_origin,
+            </if>
+            <if test="dishPriceFinal != null" >
+                dish_price_final,
+            </if>
+            <if test="dishPriceDiscount != null" >
+                dish_price_discount,
+            </if>
+            <if test="dishIngredient != null" >
+                dish_ingredient,
+            </if>
+            <if test="dishAbstract != null" >
+                dish_abstract,
+            </if>
+            <if test="dishDescription != null" >
+                dish_description,
+            </if>
+            <if test="dishImg != null" >
+                dish_img,
+            </if>
+            <if test="uid != null" >
+                uid,
+            </if>
+            <if test="dishIndex != null" >
+                dish_index,
+            </if>
+            <if test="cateId != null" >
+                cate_id,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            1,
+            <if test="dishName != null" >
+                #{dishName,jdbcType=VARCHAR},
+            </if>
+            <if test="dishPriceOrigin != null" >
+                #{dishPriceOrigin,jdbcType=FLOAT},
+            </if>
+            <if test="dishPriceFinal != null" >
+                #{dishPriceFinal,jdbcType=FLOAT},
+            </if>
+            <if test="dishPriceDiscount != null" >
+                #{dishPriceDiscount,jdbcType=FLOAT},
+            </if>
+            <if test="dishIngredient != null" >
+                #{dishIngredient,jdbcType=VARCHAR},
+            </if>
+            <if test="dishAbstract != null" >
+                #{dishAbstract,jdbcType=VARCHAR},
+            </if>
+            <if test="dishDescription != null" >
+                #{dishDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="dishImg != null" >
+                #{dishImg,jdbcType=VARCHAR},
+            </if>
+            <if test="uid != null" >
+                #{uid,jdbcType=VARCHAR},
+            </if>
+            <if test="dishIndex != null" >
+                #{dishIndex,jdbcType=VARCHAR},
+            </if>
+            <if test="cateId != null" >
+                #{cateId,jdbcType=INTEGER}
+            </if>
+        </trim>
+    </insert>
+
+
+    <update id="updateIndexList" parameterType="java.util.List" >
+        <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+            UPDATE dish_info
+            <set>
+                dish_index=${item.dishIndex}
+            </set>
+            WHERE dish_id = ${item.dishId}
+        </foreach>
+    </update>
+ </mapper>

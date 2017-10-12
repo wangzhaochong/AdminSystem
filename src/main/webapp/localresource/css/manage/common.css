@@ -1,0 +1,267 @@
+.top-item-manage {
+    width:100%;
+    min-width: 1000px;
+    background-color:#FFFFFF;
+    display: block;
+    min-height:40px;
+    float:left;
+}
+.font-bitian{
+    color: #ff0000;
+    display: inline;
+    float: left;
+}
+
+.nav-bar {
+    width:100%;
+    min-width: 1300px;
+    background-color:#56ba72;
+    display: block;
+    height:40px;
+    float:left;
+}
+
+.empty-item {
+    width:40px;
+    display: inline;
+    height:40px;
+    float:left;
+}
+
+.nav-item {
+    width:160px;
+    display: inline;
+    height:40px;
+    float:left;
+    text-align: left;
+    line-height: 40px;
+    font-size: 17px;
+    color:#FFF;
+}
+
+
+.bottom-manage {
+    padding-bottom: 0px;
+    font-size: 15px;
+    float:left;
+    width: 100%;
+    min-width: 1300px;
+    background: #F9F9F9;
+
+}
+.bottom-text-manage {
+    color: #000;
+    text-align: center;
+    line-height:20px;
+    font-size: 15px;
+    display:block;
+    float:left;
+    width:100%;
+}
+.bottom-info-manage {
+    color: #000;
+    min-height: 100px;
+    display:block;
+    width:100%;
+    float:left;
+}
+
+.bottom-logo-block {
+    display: inline;
+    width:280px;
+    height:170px;
+    float:left;
+}
+
+.top-item-logo-module {
+    float:left;
+    width:220px;
+    height:60px;
+    overflow: hidden;
+}
+
+.top-item-login {
+    float: left;
+    width: 40px;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    display:inline;
+    color: black;
+}
+
+.top-item-logo {
+    float: left;
+    height: 45px;
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
+
+.bottom-logo-manage {
+    padding-top: 40px;
+    padding-left: 30px;
+    float:left;
+    height:45px;
+}
+
+.top-item-login-module {
+    float:right;
+    height:60px;
+    overflow: hidden;
+    width: 80px;
+}
+
+.bottom-cominfo-manage {
+    padding-top:25px;
+    color: #000;
+    display: inline;
+    line-height: 20px;
+    float:left;
+}
+
+.mask-background {
+    z-index:3;
+    display:none;
+    float:left;
+    height:500px;
+    width:1300px;
+    background-color: #c9c9c9;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    position: absolute;
+
+}
+.mask-login-btn {
+    width: 130px;
+    height: 25px;
+    float: left;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 3px 0 0 80px;
+}
+
+.mask-login-form {
+    width: 300px;
+    height: 300px;
+    background-color:#FFFFFF;
+    display: none;
+    float:left;
+    z-index:5;
+    margin:130px 0 0 480px;
+    position: absolute;
+}
+
+.mask-login-words {
+    font-size: 17px;
+    line-height: 35px;
+    text-align: left;
+    color: #000;
+    float: left;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.mask-input-name {
+    width: 250px;
+    height: 30px;
+    margin: 0px 25px 0px 25px;
+    font-size: 20px;
+    float: left;
+}
+
+
+.mask-input-pwd {
+    width: 250px;
+    height: 30px;
+    margin: 0px 25px 0px 25px;
+    font-size: 20px;
+    float: left;
+}
+
+.mask-verify-box {
+    width: 350px;
+    height: 40px;
+    margin: 0px 25px 0px 25px;
+    float:left;
+}
+
+.mask-input-vrcode {
+    width: 110px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    float: left;
+}
+
+.mask-vrcode-img{
+    height: 35px;
+    margin: 0px 0px 0px 25px;
+    float: left;
+}
+
+.mask-input-message {
+    float: left;
+    width: 250px;
+    height: 20px;
+    padding: 5px 0 0 25px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: #F00;
+}
+
+.broadcast-bobble {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 120px;
+    width: 158px;
+    background-color: #FFFAC3;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.broadcast-bobble-innerbox{
+    width: 158px;
+    display: inline;
+    float: left;
+}
+
+.broadcast-bobble-text{
+    display: inline;
+    float: left;
+    width: 100%;
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+    min-height: 40px;
+    margin:4px 4px 0 4px;
+}
+.broadcast-bobble-close{
+    display: inline;
+    float: left;
+    width: 100px;
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: underline;
+    font-style: italic;
+    margin:12px 4px 4px 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

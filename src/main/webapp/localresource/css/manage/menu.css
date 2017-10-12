@@ -1,0 +1,920 @@
+.menu-context-module {
+    width: 100%;
+    min-width: 1300px;
+    background-color:#FFFFFF;
+    min-height: 400px;
+    overflow:hidden;
+    float:left;
+}
+
+.left-menu {
+    width: 200px;
+    background-color: #FFFFFF;
+    height: 440px;
+    float: left;
+    display: inline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+
+}
+
+.left-fir-title {
+    width: 190px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 25px;
+    background-color: #000;
+    padding-left: 10px;
+    display: inline;
+    margin-bottom: 2px;
+    font-weight: bolder;
+}
+
+.left-fir-item {
+    width: 190px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 23px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    display: inline;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-weight: bolder;
+}
+
+.left-sec-subedit {
+    width: 190px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    display: inline;
+}
+
+.left-sec-subrelease {
+    width: 190px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    display: inline;
+}
+
+
+.shop-headphoto-body {
+    width: 1050px;
+    background-color: #FFFFFF;
+    min-height: 350px;
+    float: left;
+    margin: 15px 0 15px 20px;
+    display: none;
+    height: 440px;
+    border: 1px solid #000;
+}
+
+.shop-manage-href{
+    text-align: left;
+    font-size: 25px;
+    padding: 50px 0 0 20px;
+    display: inline;
+}
+
+.shouyin-manage-headtest{
+    float: left;
+    text-align: left;
+    font-size: 23px;
+    margin: 20px 0 0 20px;
+    display: inline;
+    color: #000000;
+    width: 230px;
+}
+
+.shouyin-manage-computer{
+    float: left;
+    text-align: left;
+    margin: 14px 0 0 20px;
+    display: inline;
+    height: 48px;
+}
+
+.shouyin-manage-sectest{
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    display: inline;
+    color: #5b5b5b;
+    width: 230px;
+}
+.shouyin-manage-sectest-red{
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin: -5px 0 0 20px;
+    display: inline;
+    color: #F00;
+    width: 224px;
+}
+
+.shouyin-manage-trdtest{
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin: 28px 250px 14px 50px;
+    display: inline;
+    color: #5b5b5b;
+    width: 300px;
+    font-style: italic;
+}
+.shouyin-manage-userinputbox{
+    float: left;
+    display: inline;
+    width: 430px;
+}
+
+.shouyin-manage-userheadtestbox{
+    float: left;
+    display: inline;
+    width: 230px
+}
+
+.manage-bincode-box{
+    float: left;
+    display: inline;
+    width: 314px;
+    height: 347px;
+    margin: 21px 0 0 60px;
+    border: 1px solid #000000;
+}
+
+.manage-bincode-buttonbox{
+    float: left;
+    display: inline;
+    width: 320px;
+    height: 210px;
+    margin: 61px 0 0 174px;
+}
+
+.manage-bincode-prewiev{
+    float: left;
+    display: inline;
+    width: 210px;
+    height: 210px;
+    margin: 29px 0 15px 52px;
+}
+
+.manage-bincode-text{
+    float: left;
+    display: inline;
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 9px 0 0 0;
+}
+
+.shouyin-manage-usertable{
+    float: left;
+    height: 115px;
+    display: inline;
+    width: 200px;
+    margin: 5px 0 5px 80px;
+    border: 1px solid #E4E4E4;
+}
+
+.shouyin-manage-cashierbox{
+    float: left;
+    display: inline;
+    width: 200px;
+}
+
+.shouyin-manage-labletest{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 16px;
+    line-height: 30px;
+    display: inline;
+    color: #000000;
+    width: 70px;
+    height: 30px;
+}
+
+.shouyin-manage-lablelong{
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin: 20px 0px 0 20px;
+    line-height: 30px;
+    display: inline;
+    color: #000000;
+    width: 200px;
+    height: 30px;
+}
+
+.shouyin-manage-usertable-head{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    display: inline;
+    color: #000000;
+    background-color: #E4E4E4;
+    width: 80px;
+    height: 25px;
+}
+.shouyin-manage-usertable-del{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    display: inline;
+    color: #000000;
+    background-color: #E4E4E4;
+    width: 40px;
+    height: 25px;
+}
+
+.shouyin-manage-usertable-item{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline;
+    color: #000000;
+    background-color: #ffffff;
+    width: 80px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.shouyin-manage-usertable-delete{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline;
+    color: #3734ff;
+    background-color: #ffffff;
+    width: 40px;
+    height: 30px;
+    text-decoration: underline;
+}
+
+.shouyin-manage-input{
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin: 20px 0 4px 0px;
+    line-height: 30px;
+    display: inline;
+    color: #000000;
+    width: 120px;
+    height: 22px;
+}
+
+.right-fir-title {
+    width: 1040px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 25px;
+    background-color: #000;
+    padding-left: 10px;
+    display: inline;
+    margin-bottom: 2px;
+    font-weight: bolder;
+}
+
+
+
+.headphoto-marginheadphoto-margin {
+    width: 300px;
+    background-color: #FFFFFF;
+    min-height: 350px;
+    float:left;
+    margin:0 0 0 100px;
+    display:inline;
+}
+
+
+.headphoto-margin {
+    width: 860px;
+    background-color: #FFFFFF;
+    min-height: 350px;
+    float: left;
+    display: inline;
+}
+
+.shouyin-namege-leyer {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 130px;
+    float: left;
+    display: inline;
+    border-bottom: 1px dashed #E4E4E4;
+}
+
+.preview-web-body {
+    width: 1050px;
+    background-color: #FFFFFF;
+    min-height: 600px;
+    float: left;
+    margin: 15px 0 15px 20px;
+    display: none;
+    position: relative;
+}
+
+.preview-phone-margin{
+    background-color: #FFFFFF;
+    height: 580px;
+    float: left;
+    display: inline;
+    position: absolute;
+    top: 5px;
+    width: 410px;
+    left: 150px;
+    z-index: 3;
+}
+
+.preview-instruct-margin{
+    background-color: #FFFFFF;
+    height: 580px;
+    float: left;
+    display: inline;
+    position: absolute;
+    top: 150px;
+    width: 300px;
+    left: 670px;
+    z-index: 3;
+    line-height: 26px;
+    text-align: left;
+    color: #000;
+    font-size: 18px;
+}
+
+.preview-frame-box {
+    background-color: #FFFFFF;
+    min-height: 350px;
+    float: left;
+    display: inline;
+    position: absolute;
+    top: 45px;
+    left: 176px;
+    z-index: 5;
+    border: 2px solid #A0A0A0;
+}
+
+.input-label {
+    width: 100px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
+.input-box {
+    width: 250px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-right: 50px;
+    margin-top: 25px;
+    border: 1px solid #000;
+}
+
+.input-file {
+    width: 690px;
+    background-color: #FFFFFF;
+    height: 110px;
+    float: left;
+    color: #000;
+    font-size: 12px;
+    display: inline;
+}
+
+.input-file-img {
+    width: 100px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 29px 0 0 20px;
+}
+
+.store-img-show {
+    width: 150px;
+    height: 80px;
+    float: left;
+    display: inline;
+    margin: 30px 0 0 5px;
+}
+
+.input-file-msg {
+    width: 200px;
+    height: 32px;
+    float: left;
+    display: inline;
+    line-height: 16px;
+    text-align: left;
+    color: #5f5f5f;
+    font-size: 13px;
+    margin: 30px 0 0 50px;
+}
+
+.input-file-rtmsg {
+    width: 200px;
+    height: 32px;
+    float: left;
+    display: inline;
+    line-height: 16px;
+    text-align: left;
+    color: #F00;
+    font-size: 13px;
+    margin: 10px 0 0 50px;
+}
+
+
+.input-textbox {
+    width: 668px;
+    background-color: #FFFFFF;
+    height: 100px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-top: 30px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+
+.input-summit {
+    width: 130px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 10px 0 0 350px;
+}
+
+.input-summit-message {
+    width: 250px;
+    height: 25px;
+    display: none;
+    line-height: 16px;
+    text-align: left;
+    color: #F00;
+    margin: 13px 0 0 25px;
+    float: left;
+}
+
+
+.text-module {
+    width: 300px;
+    background-color: #FFFFFF;
+    height: 40px;
+    float:left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    display:inline;
+    padding-top:20px;
+}
+
+
+.menulist-margin {
+    width: 1000px;
+    background-color: #FFFFFF;
+    min-height: 350px;
+    float: left;
+    display: inline;
+}
+
+
+.menulist-selectType-box {
+    width: 950px;
+    background-color: #FFFFFF;
+    min-height: 30px;
+    float: left;
+    display: inline;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.scroll-menulist {
+    width: 240px;
+    background-color: #FFFFFF;
+    height: 320px;
+    float: left;
+    display: inline;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid #000;
+
+}
+
+.scroll-menulist-titlebox {
+    width: 240px;
+    height: 40px;
+    float: left;
+    display: inline;
+}
+
+.scroll-catelist-title {
+    width: 60px;
+    background-color: #E4E4E4;
+    height: 40px;
+    float: left;
+    display: inline;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.scroll-menulist-title {
+    width: 60px;
+    background-color: #E4E4E4;
+    height: 40px;
+    float: left;
+    display: inline;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.scroll-menulist-list {
+    width: 240px;
+    float: left;
+    display: inline;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 280px;
+}
+
+.scroll-menulist-menuitem {
+    width: 250px;
+    float: left;
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    background-color: #ffffff;
+    text-indent: 12px;
+}
+
+.scroll-catelist-menuitem {
+    width: 250px;
+    float: left;
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    background-color: #ffffff;
+    text-indent: 12px;
+}
+.menulist-editbox {
+    width: 715px;
+    background-color: #FFFFFF;
+    height: 320px;
+    float: left;
+    display: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid #000;
+
+}
+
+.menulist-editbox-titlebox {
+    width: 705px;
+    height: 40px;
+    float: left;
+    display: inline;
+    line-height: 40px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 10px;
+    background-color: #E4E4E4;
+}
+
+.menulist-editbox-contentbox {
+    width: 715px;
+    float: left;
+    display: inline;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 280px;
+}
+
+.input-label-menutype {
+    width: 120px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+}
+
+.input-label-menuitem {
+    width: 75px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.input-label-cateitem {
+    width: 110px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.select-type-module{
+    width: 120px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+}
+
+.select-type-editbox{
+    width: 202px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 25px 400px 0 0;
+    border: 1px solid #000;
+}
+
+.input-box-menuitem {
+    width: 200px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-right: 50px;
+    margin-top: 25px;
+    border: 1px solid #000;
+}
+
+.input-box-cateitem {
+    width: 250px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-right: 20px;
+    margin-top: 25px;
+    border: 1px solid #000;
+}
+
+.input-file-menuitem {
+    width: 550px;
+    background-color: #FFFFFF;
+    height: 25px;
+    float: left;
+    color: #000;
+    font-size: 12px;
+    display: inline;
+    margin-left: 50px;
+    margin-top: 32px;
+}
+
+
+.input-rediobox-menuitem {
+    width: 547px;
+    background-color: #FFFFFF;
+    height: 30px;
+    float: left;
+    color: #000;
+    font-size: 15px;
+    display: inline;
+    margin-top: 28px;
+}
+
+.input-redio-menuitem {
+    float: left;
+    font-size: 15px;
+    display: inline;
+    margin: 5px 0 0 26px;
+}
+
+.input-rediolabel-menuitem {
+    float: left;
+    font-size: 15px;
+    display: inline;
+    margin: 0 10px 0 4px;
+}
+
+.input-textbox-menuitem {
+    width: 547px;
+    background-color: #FFFFFF;
+    height: 80px;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    display: inline;
+    margin-top: 30px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.input-summit-menuitem {
+    width: 130px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 0 0 20px 289px;
+}
+
+.input-summit-cateitem {
+    width: 130px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 26px 0 20px 30px;
+}
+.input-file-dish {
+    width: 600px;
+    background-color: #FFFFFF;
+    height: 110px;
+    float: left;
+    color: #000;
+    font-size: 12px;
+    display: inline;
+}
+
+.input-file-dishimg {
+    width: 80px;
+    height: 20px;
+    float: left;
+    line-height: 8px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    display: inline;
+    margin: 32px 0 0 0px;
+}
+.dish-img-show {
+    width: 120px;
+    height: 65px;
+    float: left;
+    display: inline;
+    margin: 30px 0 0 15px;
+}
+
+.dish-input-file-msg {
+    width: 200px;
+    height: 32px;
+    float: left;
+    display: inline;
+    line-height: 16px;
+    text-align: left;
+    color: #5f5f5f;
+    font-size: 10px;
+    margin: 30px 0 0 25px;
+}
+
+.dish-input-file-rtmsg {
+    width: 200px;
+    height: 32px;
+    float: left;
+    display: inline;
+    line-height: 16px;
+    text-align: left;
+    color: #F00;
+    font-size: 10px;
+    margin: 5px 0 0 25px;
+}
+
+.shouyin-manage-inputbt {
+    width: 70px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 22px 0 20px 118px;
+}
+
+.manage-bincode-button {
+    width: 130px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 14px 0 0 0;
+}
+.manage-bincode-button-text{
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 17px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+}
+
+.shouyin-manage-inputbt-tableid {
+    width: 70px;
+    height: 25px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    display: inline;
+    margin: 22px 0 20px 20px;
+}
